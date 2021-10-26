@@ -15,6 +15,16 @@ dans un terminal faire les commandes suivantes depuis votre répoertoire de trav
 ```bash
 symfony new --full demo
 ```
+Ou cloner le projet depuis github
+```cmd
+git clone https://github.com/olivierPoussel/symdony-demo-b3-web.git
+cd symdony-demo-b3-web
+composer install
+# configurer la bdd dans le .env ou .env.local voir ci-après.
+php bin/console doctrine:database:create
+php bin/console doctrine:migration:migrate
+php bin/console doctrine:load:fixtures
+```
 
 configurer la Bdd dans le .env ou .env.local
 ```
