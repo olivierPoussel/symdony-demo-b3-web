@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+	<h1>Request</h1>
+
+	{% for label, item in param %}
+		<p>{{label}}
+			{{item}}</p>
+	{% endfor %}
+{% endblock %}
