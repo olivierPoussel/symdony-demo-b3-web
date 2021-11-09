@@ -16,7 +16,7 @@ dans un terminal faire les commandes suivantes depuis votre répoertoire de trav
 symfony new --full demo
 ```
 Ou cloner le projet depuis github
-```cmd
+```bash
 git clone https://github.com/olivierPoussel/symdony-demo-b3-web.git
 cd symdony-demo-b3-web
 composer install
@@ -24,6 +24,9 @@ composer install
 php bin/console doctrine:database:create
 php bin/console doctrine:migration:migrate
 php bin/console doctrine:load:fixtures
+yarn install
+# ou 
+npm install
 ```
 
 configurer la Bdd dans le .env ou .env.local
@@ -43,6 +46,15 @@ lancer le serveur Symfony
 symfony serve
 ou
 symfony server:start
+```
+
+lancer webpack
+```bash
+# build
+yarn build
+ou
+# server dev mode
+yarn dev-server
 ```
 
 ## Symfony composant
