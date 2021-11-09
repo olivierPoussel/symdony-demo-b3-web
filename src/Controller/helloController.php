@@ -57,7 +57,7 @@ class helloController extends AbstractController
     }
 
     /**
-     * @Route("/hello-twig", name="hello_twig")
+     * @Route("/", name="hello_twig")
      */
     public function helloTwig()
     {
@@ -76,7 +76,7 @@ class helloController extends AbstractController
         ]);
     }
     /**
-     * @Route("/", name="hello")
+     * @Route("/hello", name="hello")
      */
     public function hello()
     {

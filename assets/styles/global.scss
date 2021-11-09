@@ -1,0 +1,10 @@
+// assets/styles/global.scss
+
+// customize some Bootstrap variables
+// $primary: darken(#428bca, 20%);
+$body-bg: black !default;
+
+// the ~ allows you to reference things in node_modules
+@import "~bootswatch/dist/superhero/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/superhero/bootswatch";
